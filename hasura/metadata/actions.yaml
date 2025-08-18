@@ -1,0 +1,19 @@
+actions:
+  - name: sendMessage
+    definition:
+      kind: synchronous
+      handler: "{{N8N_WEBHOOK_URL}}/webhook/chatbot"
+      forward_client_headers: true
+      headers:
+        - name: x-hasura-admin-secret
+          value_from_env: HASURA_GRAPHQL_ADMIN_SECRET
+    permissions:
+      - role: user
+    comment: "Send message to chatbot and get response"
+custom_types:
+  enums: []
+  input_objects:
+    - name: SendMessageInput
+  objects:
+    - name: SendMessageOutput
+  scalars: []

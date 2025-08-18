@@ -1,6 +1,17 @@
 {
-  "extends": "../../../tsconfig.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "jsx": "react"
-  }
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "frontend/*": ["./*"]
+    }
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

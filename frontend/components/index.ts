@@ -11,6 +11,10 @@ import OTP from 'frontend/components/otp';
 import Select from 'frontend/components/select';
 import H2 from 'frontend/components/typography/h2';
 import ParagraphMedium from 'frontend/components/typography/paragraph-medium';
+import { ChatSidebar } from 'frontend/components/chat/chat-sidebar';
+import { MessageList } from 'frontend/components/chat/message-list';
+import { MessageInput } from 'frontend/components/chat/message-input';
+import { ProtectedRoute } from 'frontend/components/protected-route/protected-route';
 
 export {
   Button,
@@ -26,4 +30,8 @@ export {
   PasswordInput,
   Select,
   VerticalStackLayout,
+  ChatSidebar,
+  MessageList,
+  MessageInput,
+  ProtectedRoute,
 };
