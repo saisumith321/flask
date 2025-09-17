@@ -41,10 +41,14 @@ RUN pipenv install --dev
 
 COPY . /opt/app
 
-# build arguments
+
 ARG APP_ENV
 
 RUN npm run build
 
 CMD [ "npm", "start" ]
+
+#sumith is adding 
+#idehfhirgr
+
 
