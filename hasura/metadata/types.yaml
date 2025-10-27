@@ -1,0 +1,15 @@
+input_objects:
+  - name: SendMessageInput
+    fields:
+      - name: chat_id
+        type: uuid!
+      - name: message
+        type: String!
+
+objects:
+  - name: SendMessageOutput
+    fields:
+      - name: success
+        type: Boolean!
+      - name: message
+        type: String
